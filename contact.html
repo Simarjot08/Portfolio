@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- remix icon -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+     <!-- google fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bungee+Spice&family=Bungee+Tint&family=DM+Serif+Display:ital@0;1&family=Delius&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Syne:wght@400..800&family=Wallpoet&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- font awesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     
+     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/output.css">
+    <!-- emailjs -->
+   <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "8_zPCXqu9D_zohAlf",
+      });
+   })();
+</script>
+
+</head>
+<body class=" lg:bg-blue-950 ">
+    <!-- navbar -->
+   <nav  id="nav" class="flex p-4 md:p-5 items-center bg-blue-950 md:bg-blue-950 text-white lg:p-6 dm-serif-display-regular w-screen  lg:bg-transparent  md:z-5">
+    <div class="lg:flex hidden  items-center lg:text-2xl ml-3 lg:ml-4"><i class="fa-solid fa-user-tie"></i><h1 class="lg:ml-3 ml-2">Simarjot Kaur</h1></div>
+    <div id="nav-item" class="lg:flex items-center font-thin lg:text-xl lg:ml-80 lg:gap-10  hidden md:flex md:ml-20 md:gap-5">
+        <a href="index.html">Home</a>
+        <a href="#sec-3">About me</a>
+        <a href="#skills" class="lg:pl-10">Skills</a>
+        <a href="contact.html" >Contact me</a>
+    </div>
+    <div id="nav-2" class="lg:hidden block pl-[80%] md:hidden ">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+    <div class=" lg:ml-96 lg:pl-5 lg:text-2xl ml-3 md:ml-48 ">
+      <i class="fa-solid fa-moon" onclick="theme()"> </i></div>
+     <div class="lg:hidden hidden">
+       <i class="fa-solid fa-sun">
+
+       </i></div> 
+   </nav>
+<!-- menu div  -->
+
+        <div id="menu-1" class="lg:hidden  md:hidden hidden">
+            <a class="lg:hidden" href="index.html">Home</a>
+            <a class="lg:hidden" href="#sec-3">About me</a>
+            <a class="lg:hidden" href="#skills">Skills</a>
+            <a class="lg:hidden" href="contact.html">Contact me</a>
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+
+
+        <!-- contact form -->
+
+      
+           <div id="sec-3" class="flex lg:flex-row flex-col justify-center items-center p-[5%] pb-[5%] gap-0  text-white dm-serif-display-regular">
+
+            <div class="lg:ml-[5%] mr-[-8%] ml-[20%]">
+                <img src="assets/images/contact-2.avif" alt="" class="h-[98%] w-[57%] shadow-sm transition-all hover:shadow-lg hover:scale-[1.05] duration-500 shadow-white rounded-full">
+            </div>
+
+            <div>
+               <form id="contact-form"    onsubmit="sendEmail(event)">
+                <h2 class="text-lg">Enter Your Name</h2>
+    <input type="text" name="name" placeholder="Your Name" required />
+       <h2>Enter Your Email</h2>
+    <input type="email" name="email" placeholder="Your Email" required />
+       <h2>Enter Project Idea</h2>
+    <textarea name="project_idea" placeholder="Project Idea" required></textarea>
+    <button type="submit" class="bg-green-500 text-white" onclick="sendEmail()">Send</button>
+  </form>
+           </div>
+
+              </div>
+
+
+        <!-- footer -->
+                 <footer  class="bg-blue-950 flex p-5 justify-center items-center ">
+            <div class="icons text-white text-4xl flex justify-center items-center gap-10">
+    <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+     <a href=""><i class="fa-brands fa-instagram"></i></a>
+  <a href="https://www.linkedin.com/in/simarjot-kaur-7aa620287/"><i class="fa-brands fa-linkedin"></i></a>
+  <a href=""><i class="fa-brands fa-github"></i></a>
+    
+</div>
+          </footer>
+
+        
+
+
+
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+         <script src="assets/js/index.js"></script>
+
+</body>
+</html>
