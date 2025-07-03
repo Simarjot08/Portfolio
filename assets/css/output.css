@@ -231,6 +231,9 @@
   .top-4 {
     top: calc(var(--spacing) * 4);
   }
+  .top-32 {
+    top: calc(var(--spacing) * 32);
+  }
   .top-36 {
     top: calc(var(--spacing) * 36);
   }
@@ -369,6 +372,12 @@
   .h-48 {
     height: calc(var(--spacing) * 48);
   }
+  .h-\[3\] {
+    height: 3;
+  }
+  .h-\[30\%\] {
+    height: 30%;
+  }
   .h-\[35\%\] {
     height: 35%;
   }
@@ -396,11 +405,29 @@
   .w-72 {
     width: calc(var(--spacing) * 72);
   }
+  .w-\[\%\] {
+    width: %;
+  }
+  .w-\[0\%\] {
+    width: 0%;
+  }
+  .w-\[31\%\] {
+    width: 31%;
+  }
+  .w-\[50\%\] {
+    width: 50%;
+  }
   .w-\[57\%\] {
     width: 57%;
   }
   .w-\[60\%\] {
     width: 60%;
+  }
+  .w-\[65\%\] {
+    width: 65%;
+  }
+  .w-\[70\%\] {
+    width: 70%;
   }
   .w-\[80\%\] {
     width: 80%;
@@ -431,9 +458,6 @@
   }
   .border-collapse {
     border-collapse: collapse;
-  }
-  .cursor-pointer {
-    cursor: pointer;
   }
   .resize {
     resize: both;
